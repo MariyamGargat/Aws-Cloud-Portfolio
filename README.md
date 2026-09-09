@@ -48,4 +48,5 @@ I am building practical AWS Cloud skills and seeking opportunities in remote Clo
 
 ## Contact
 
-GitHub: [Your GitHub Profile]
+https://github.com/MariyamGargat/aws-cloud-portfolio
+
