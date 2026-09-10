@@ -20,7 +20,13 @@ I configured an S3 bucket as the origin for a CloudFront distribution and config
 - Global content delivery
 
 ## Architecture
-User → CloudFront → S3
+
+```mermaid
+flowchart LR
+    User[User / Browser] --> CF[Amazon CloudFront]
+    CF --> S3[(Amazon S3)]
+    S3 --> Website[Static Website]
+```
 
 ## Result
 The website was configured for global delivery through Amazon CloudFront.
