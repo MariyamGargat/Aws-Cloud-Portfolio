@@ -34,6 +34,5 @@ flowchart LR
     VPC --> PrivateSubnet[Private Subnet]
 ```
 
-
 ## Screenshots
 Screenshots in this folder demonstrate the VPC, subnets, Internet Gateway, route tables, and security configuration.
