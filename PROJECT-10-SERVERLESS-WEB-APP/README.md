@@ -17,19 +17,16 @@ I created a serverless web application where a frontend hosted on S3 and deliver
 
 ## Architecture
 
-User
-↓
-CloudFront
-↓
-S3
-↓
-API Gateway
-↓
-Lambda
-↓
-DynamoDB
-
-IAM was used for permissions and CloudWatch was used for monitoring and logs.
+```mermaid
+flowchart LR
+    User[User / Browser] --> CF[Amazon CloudFront]
+    CF --> S3[(Amazon S3)]
+    S3 --> API[Amazon API Gateway]
+    API --> Lambda[AWS Lambda]
+    Lambda --> DynamoDB[(Amazon DynamoDB)]
+    Lambda --> IAM[AWS IAM]
+    Lambda --> CW[Amazon CloudWatch]
+```
 
 ## Skills Demonstrated
 - Serverless architecture
