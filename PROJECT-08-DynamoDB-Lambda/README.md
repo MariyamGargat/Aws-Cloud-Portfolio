@@ -20,7 +20,13 @@ I created a DynamoDB table, added user data, and created a Lambda function that 
 - AWS SDK for Python (Boto3)
 
 ## Architecture
-Lambda → DynamoDB → User Data
+
+```mermaid
+flowchart LR
+    User[User / Request] --> Lambda[AWS Lambda]
+    Lambda --> DynamoDB[(Amazon DynamoDB)]
+    DynamoDB --> Data[User Data]
+```
 
 ## Result
 The Lambda function successfully retrieved the user information stored in DynamoDB.
