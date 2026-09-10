@@ -24,7 +24,16 @@ I created a VPC with public and private subnets, configured an Internet Gateway,
 A basic AWS cloud network was successfully created and configured.
 
 ## Architecture
-Internet → Internet Gateway → Public Subnet → EC2
+
+```mermaid
+flowchart LR
+    Internet --> IGW[Internet Gateway]
+    IGW --> PublicSubnet[Public Subnet]
+    PublicSubnet --> EC2[EC2 Web Server]
+    VPC[VPC] --> PublicSubnet
+    VPC --> PrivateSubnet[Private Subnet]
+```
+
 
 ## Screenshots
 Screenshots in this folder demonstrate the VPC, subnets, Internet Gateway, route tables, and security configuration.
