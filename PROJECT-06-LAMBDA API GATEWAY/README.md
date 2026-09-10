@@ -19,7 +19,13 @@ I created a Lambda function and connected it to an API Gateway HTTP API. The API
 - IAM permissions
 
 ## Architecture
-User → API Gateway → Lambda → Response
+
+```mermaid
+flowchart LR
+    User[User / Browser] --> API[API Gateway]
+    API --> Lambda[AWS Lambda]
+    Lambda --> Response[API Response]
+```
 
 ## Result
 The serverless API was successfully deployed and tested through the API endpoint.
