@@ -23,6 +23,24 @@ I created a MySQL database using Amazon RDS, configured networking and security,
 ## Result
 The MySQL database was successfully created and accessed from the cloud environment.
 
+## Architecture
+
+```mermaid
+flowchart LR
+    EC2[EC2 Web Server] --> SG[Security Group]
+    SG --> RDS[(Amazon RDS MySQL)]
+    RDS --> DB[(project5db)]
+```
+
+## Architecture
+
+```mermaid
+flowchart LR
+    EC2[EC2 Web Server] --> SG[Security Group]
+    SG --> RDS[(Amazon RDS MySQL)]
+    RDS --> DB[(project5db)]
+```
+
 ## Database Flow
 EC2 → RDS MySQL
 
