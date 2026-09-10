@@ -32,15 +32,6 @@ flowchart LR
     RDS --> DB[(project5db)]
 ```
 
-## Architecture
-
-```mermaid
-flowchart LR
-    EC2[EC2 Web Server] --> SG[Security Group]
-    SG --> RDS[(Amazon RDS MySQL)]
-    RDS --> DB[(project5db)]
-```
-
 ## Database Flow
 EC2 → RDS MySQL
 
